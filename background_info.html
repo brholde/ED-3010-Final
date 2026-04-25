@@ -1,0 +1,79 @@
+<html lang="en" data-bs-theme="dark">
+<head>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+	<!-- nav stuffs -->
+	<div id="navbar"></div>
+	<script>
+		fetch("navbar.html")
+		.then(res => res.text())
+		.then(data => {
+			document.getElementById("navbar").innerHTML = data;
+			const links = document.querySelectorAll(".nav-link");
+			const currentPage = window.location.pathname.split("/").pop();
+
+			links.forEach(link => {
+				if (link.getAttribute("href") === currentPage) {
+					link.classList.add("active");
+				}
+			});
+		});
+	</script>
+
+	<!-- content stuffs -->
+	<div class="container m-4 mx-auto">
+		<h1 class="display-1 text-center">Background</h1>
+		<p class="mt-4">
+			Schools have increasingly become more digital. Teacher presentations are being made on powerpoint, YouTube videos are being shown to supplement lectures, and homework is being completed by students at home on tablets and laptops. Devices such as iPads and laptops are being widely provided to American students by their school district. During early 2025, 88% of public schools in America provided a device for each student (More than half of public school leaders say cell phones hurt academic performance 2024).
+		</p>
+		<p>
+			These devices can be an invaluable tool in the student’s education journey. Teachers can assign work that is more interactive, visual, and memorable for their students. The students often have access to learning platforms that test or expand their knowledge on what they are learning in the classroom. Additionally, school issued devices help close the digital divide. Students who may not have a computing device at home are now able to own one if their school is providing them. This helps ensure students are gaining technical literacy which is important in a world that is growing more digital every year.
+		</p>
+		<p>
+			However, these devices introduce many issues if they are provided without modification. The internet can become a distraction to students. For example, students may wander onto a gaming site which can take their focus away from a teacher’s lesson. According to a Edweek Research Survey in 2025, of the teachers asked, 93% of teachers state that typically, students spend at least some portion of class time off task, on the internet (Langreo, 2026). The device that is provided to aid in the student’s education can hinder it in some scenarios. Some other problems that these devices can produce is giving students a platform to cyberbully their classmates, and the devices also give students the ability to make searches for dangerous or inappropriate material.
+		</p>
+		<p>
+			So how can school faculty help prevent these negative aspects of these devices from happening? Many schools turn to Student Activity Monitoring Software. This type of software often shares what each student is working on to teachers and faculty. A teacher can look to see whether or not a student is staying on task. These softwares often also log keystrokes and searches. Any searches that are viewed as suspicious or potentially dangerous are flagged and marked for school faculty to review and take action on.
+		</p>
+		<div class="card mb-3">
+			<div class="row g-0">
+				<div class="col-md-4">
+				<img src="https://cdn.prod.website-files.com/60e615980cab093e6f2db3c3/673e5fe902647825c0ac38e6_64da694e2858207b0c69078e_DragAndDrop.gif" class="img-fluid rounded-start" alt="GoGuardian Teacher View">
+				</div>
+				<div class="col-md-8">
+				<div class="card-body">
+					<h5 class="card-title">GoGuardian Teacher View</h5>
+					<p class="card-text">This is a popular software used by many schools to view exactly what a student is doing on their device. This is the view that a typical teacher can see from their computer. The content on screen on every student's device is available at a glance.</p>
+					<p class="card-text"><small class="text-body-secondary">Image Source - <a href="https://www.goguardian.com/blog/explore-the-enhanced-goguardian-teacher-for-a-new-school-year" target="_blank">https://www.goguardian.com/blog/explore-the-enhanced-goguardian-teacher-for-a-new-school-year</a></small></p>
+				</div>
+				</div>
+			</div>
+		</div>
+		<h1>The Problems</h1>
+		<p>
+			While this may be very helpful to faculty in many scenarios, there is concern over the extent in which this type of software is used. For example, often the software continues to monitor activity on the device, even when used at home. According to a study on 14 different school device monitoring software, 12 of them monitored the student’s devices during every day of the week and during all hours of the day (O'Daffer et al., 2025). Schools also tend to report students making dangerous searches to authorities. In a survey in 2022 by the Center for Democracy and Technology, 44% of teachers stated that at least one of their students has been contacted by law enforcement as a result of being flagged by monitoring software (Center For Democracy & Technology, 2022).
+		</p>
+		<p>
+			The major issue with monitoring software is how invasive it is on a student’s privacy. Every search, every keystroke, and every action taken on the device is being shared to school officials and the software companies themselves. This is happening even when a student is in their own home. These softwares are still running and recording what students are doing. This is problematic because what if the student does not know the extent to which they are being monitored? They could type out compromising information or searches that their school now has. Additionally, the negative impacts of monitoring software are not distributed equally. According to the Center for Democracy and Technology, black students, Hispanic students, students living in rural areas, and students from low-income families are more likely to experience harm from monitoring software because these students are more likely to rely on their school issued device. Additionally, they state that LGBTQ+ students are more likely to receive some sort of consequence because of some sort of action caught by the monitoring software. On top of this, 13% of students surveyed claim that they know someone who had their sexuality exposed because of school device monitoring software (Center For Democracy & Technology, 2022).
+		</p>
+		<p>
+			While there are plenty of ways that this software can help improve the classroom environments, its negative outcomes also need to be considered. It’s around the clock monitoring and its potential to get the student in compromising situations is adding more stress for students.
+		</p>
+		<div class="card w-75 mx-auto">
+			<div class="ratio ratio-16x9">
+				<iframe src="https://www.youtube-nocookie.com/embed/S7Geq1Yk_aE?si=n-Z1fr5GWSoZ2cbr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			</div>
+			<div class="card-body">
+				<h5 class="card-title">"Some U.S. school districts turned to monitoring software for students in remote learning"</h5>
+				<p class="card-text">CBS News</p>
+			</div>
+			<ul class="list-group list-group-flush">
+				<li class="list-group-item">A news story from 2021 discussing montitoring software being introduced during remote learning.</li>
+				<li class="list-group-item"><small class="text-body-secondary">Video Link - <a href="https://youtu.be/S7Geq1Yk_aE" target="_blank">https://youtu.be/S7Geq1Yk_aE</a></small></li>
+			</ul>
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

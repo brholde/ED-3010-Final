@@ -1,0 +1,79 @@
+<html lang="en" data-bs-theme="dark">
+<head>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+	<!-- nav stuffs -->
+	<div id="navbar"></div>
+	<script>
+		fetch("navbar.html")
+		.then(res => res.text())
+		.then(data => {
+			document.getElementById("navbar").innerHTML = data;
+			const links = document.querySelectorAll(".nav-link");
+			const currentPage = window.location.pathname.split("/").pop();
+
+			links.forEach(link => {
+				if (link.getAttribute("href") === currentPage) {
+					link.classList.add("active");
+				}
+			});
+		});
+	</script>
+
+	<!-- content stuffs -->
+	<div class="container m-4 mx-auto">
+		<h1 class="display-1 text-center mb-4">References</h1>
+		<div class="container mb-5">
+			<ul>
+				<li>
+					Beckett, L. (2019, October 22). Under Digital Surveillance: How American Schools spy on millions of kids. The Guardian. <a href="https://www.theguardian.com/world/2019/oct/22/school-student-surveillance-bark-gaggle" target="_blank">https://www.theguardian.com/world/2019/oct/22/school-student-surveillance-bark-gaggle</a>
+				</li>
+				<li>
+					Calderwood, S. J. (2025). Surveillance digitisation, performativity, and teacher-student relationships in a blended learning setting. Postdigital Science and Education. <a href="https://doi.org/10.1007/s42438-024-00537-6" target="_blank">https://doi.org/10.1007/s42438-024-00537-6</a>
+				</li>
+				<li>
+					CBS News. (2021, September 17). Some U.S. school districts turned to monitoring software for students in remote learning. YouTube. <a href="https://youtu.be/S7Geq1Yk_aE?si=rUL95EZIgFafRliX" target="_blank">https://youtu.be/S7Geq1Yk_aE?si=rUL95EZIgFafRliX</a>
+				</li>
+				<li>
+					Center For Democracy & Technology. (2022, August). Hidden harms the misleading promise of monitoring students online August 2022. cdt. <a href="https://cdt.org/wp-content/uploads/2022/08/Hidden-Harms-The-Misleading-Promise-of-Monitoring-Students-Online-Research-Report-Final-Accessible.pdf" target="_blank">https://cdt.org/wp-content/uploads/2022/08/Hidden-Harms-The-Misleading-Promise-of-Monitoring-Students-Online-Research-Report-Final-Accessible.pdf</a>
+				</li>
+				<li>
+					Explore the enhanced goguardian teacher for a new school year. GoGuardian. (n.d.). <a href="https://www.goguardian.com/blog/explore-the-enhanced-goguardian-teacher-for-a-new-school-year" target="_blank">https://www.goguardian.com/blog/explore-the-enhanced-goguardian-teacher-for-a-new-school-year</a>
+				</li>
+				<li>
+					FCC. (n.d.-a). Children’s internet protection act (CIPA) | Federal Communications Commission. <a href="https://www.fcc.gov/consumers/guides/childrens-internet-protection-act" target="_blank">https://www.fcc.gov/consumers/guides/childrens-internet-protection-act</a>
+				</li>
+				<li>
+					FCC. (n.d.-b). Emergency connectivity fund | Federal Communications Commission. <a href="https://www.fcc.gov/emergency-connectivity-fund" target="_blank">https://www.fcc.gov/emergency-connectivity-fund</a>
+				</li>
+				<li>
+					Graduate Programs in Education and Psychology - Pepperdine University. (2026, April 8). Integrating Technology in the classroom for 2025. GSEP Blog | Pepperdine GSEP. <a href="https://gsep.pepperdine.edu/blog/posts/integrating-technology-in-the-classroom-for-2025.htm" target="_blank">https://gsep.pepperdine.edu/blog/posts/integrating-technology-in-the-classroom-for-2025.htm</a>
+				</li>
+				<li>
+					Kelley, J. (2023, November 15). How goguardian invades student privacy. Electronic Frontier Foundation. <a href="https://www.eff.org/deeplinks/2023/10/how-goguardian-invades-student-privacy?language=en" target="_blank">https://www.eff.org/deeplinks/2023/10/how-goguardian-invades-student-privacy?language=en</a>
+				</li>
+				<li>
+					Langreo, L. (2026, February 4). Chromebooks or cellphones: Which are the bigger classroom distraction?. Education Week. <a href="https://www.edweek.org/technology/chromebooks-or-cellphones-which-are-the-bigger-classroom-distraction/2025/05" target="_blank">https://www.edweek.org/technology/chromebooks-or-cellphones-which-are-the-bigger-classroom-distraction/2025/05</a>
+				</li>
+				<li>
+					Lindstrom Johnson, S., Bottiani, J., Waasdorp, T. E., & Bradshaw, C. P. (2018). Surveillance or safekeeping? how school security officer and camera presence influence students’ perceptions of safety, equity, and support. Journal of Adolescent Health, 63(6), 732–738. <a href="https://doi.org/10.1016/j.jadohealth.2018.06.008" target="_blank">https://doi.org/10.1016/j.jadohealth.2018.06.008</a>
+				</li>
+				<li>
+					More than half of public school leaders say cell phones hurt academic performance. IES. (2024, December 5). <a href="https://ies.ed.gov/learn/press-release/more-half-public-school-leaders-say-cell-phones-hurt-academic-performance" target="_blank">https://ies.ed.gov/learn/press-release/more-half-public-school-leaders-say-cell-phones-hurt-academic-performance</a>
+				</li>
+				<li>
+					O’Daffer, A., Liu, W., & Bloss, C. S. (2025). School-based online surveillance of youth: Systematic search and content analysis of Surveillance Company websites. Journal of Medical Internet Research, 27. <a href="https://doi.org/10.2196/71998" target="_blank">https://doi.org/10.2196/71998</a>
+				</li>
+				<li>
+					United Nations. (n.d.). Goal 4 | Department of Economic and Social Affairs. United Nations. <a href="https://sdgs.un.org/goals/goal4#targets_and_indicators" target="_blank">https://sdgs.un.org/goals/goal4#targets_and_indicators</a>
+				</li>
+				<li>
+					Watters, A. (2015, March 2). From lunchboxes to laptops: How Maine went one-to-one. Hack Education. <a href="https://hackeducation.com/2015/03/02/maine-laptops" target="_blank">https://hackeducation.com/2015/03/02/maine-laptops</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

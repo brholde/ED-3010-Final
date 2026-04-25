@@ -1,0 +1,67 @@
+<html lang="en" data-bs-theme="dark">
+<head>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+	<!-- nav stuffs -->
+	<div id="navbar"></div>
+	<script>
+		fetch("navbar.html")
+		.then(res => res.text())
+		.then(data => {
+			document.getElementById("navbar").innerHTML = data;
+			const links = document.querySelectorAll(".nav-link");
+			const currentPage = window.location.pathname.split("/").pop();
+
+			links.forEach(link => {
+				if (link.getAttribute("href") === currentPage) {
+					link.classList.add("active");
+				}
+			});
+		});
+	</script>
+
+	<!-- content -->
+	<div class="container p-4">
+		<h1 class="display-3 text-center mb-4">United Nations Goals For Substainable Development</h1>
+		<p class="mb-4">The United Nations posted goals that they believe that all countries should work towards cooperatively. These goals are intended to be accomplished by the end of 2030. The following is the goal, target, and indicator that I believe best fits with the topic of American schools utalizing monitoring software on the devices that they distribute to their students.</p>
+		<div class="row">
+			<div class="col-3 my-auto">
+				<div id="list-example" class="list-group text-center">
+					<a class="list-group-item list-group-item-action" href="#list-item-1">Goal</a>
+					<a class="list-group-item list-group-item-action" href="#list-item-2">Target</a>
+					<a class="list-group-item list-group-item-action" href="#list-item-3">Indicator</a>
+				</div>
+			</div>
+			<div class="col">
+				<div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="overflow-auto rounded border p-4 text-center mb-4" tabindex="0" style="height: 25vh;">
+					<h4 id="list-item-1" class="pt-3">Goal - 4</h4>
+					<p class="mb-5">"Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all"</p>
+					<hr class="mb-5">
+					<h4 id="list-item-2">Target - 4.a</h4>
+					<p class="mb-5">"Build and upgrade education facilities that are child, disability and gender sensitive and provide safe, non-violent, inclusive and effective learning environments for all"</p>
+					<hr class="mb-5">
+					<h4 id="list-item-3">Indicator - 4.a.1</h4>
+					<pclass="mb-5">"Proportion of schools offering basic services, by type of service"</p>
+				</div>
+			<small class="text-muted"><a href="https://sdgs.un.org/goals/goal4#targets_and_indicators" target="_blank">United Nations - Goals For Substainable Development</a></small>
+			</div>
+		</div>
+		<h3 class="mt-5">Connection To UN Target</h3>
+		<p>
+			Firstly, to connect to the indicator, the school devices themselves are a service. Ensuring that every student has some kind of device to learn technical literacy is becoming more important in a world changing to be more digital. Obviously though, there are some problems with students having access to the internet. Many schools turn to device monitoring software to address these issues, but more problems can be introduced.
+		</p>
+		<p>
+			One issue that monitoring software was trying to fix was keeping students on task. A teacher can only be effective if their students are actually participating and engaged in the lesson. The monitoring software enables the teacher to quickly spot a student on a game or some other distraction. However, a student that is being constantly monitored has its own drawbacks. According to a 2025 study on how surveillance impacts a student’s relationship with their teachers, “The constant monitoring, data tracking, and emphasis on quantifiable metrics create an environment where students may prioritise meeting expectations over genuinely grappling with the material” (Calderwood, 2025). With either stance, there is no doubt that surveillance software does impact on how effective the learning environment is for a student. This connects with the goal of ensuring quality education for all. Additionally, this connects with the last part of the target that aims to build educational facilities that are “effective learning environments for all”. 
+		</p>
+		<p>
+			Another topic for discussion is whether device surveillance software affects each student to a similar degree. The research seems to indicate that no, the software does not have the same impact on every student. Some students, especially those in low income families, tend to rely on their school devices more so than other students. Because they are more likely to use these devices at home, they are subject to further monitoring than other students. This also means that they are more likely to receive disciplinary action for searches and other actions taken on their devices. Additionally, students in historically mistreated groups tend to be disadvantaged more by surveillance than other students. According to a 2025 study, “Findings suggest that students who only have school-provided devices are more heavily surveilled and that historically marginalized students may be at a higher risk of being flagged due to algorithmic bias”. Additionally they state, “In the school-based surveillance space, potential adverse effects of automated surveillance via AI include higher false positive rates for Black students, outing of LGBTQ+ students, or excessive discipline of students with disabilities” (O'Daffer et al., 2025). If the surveillance software is unequally disadvantageous to the student population, the goal of “inclusive and equitable quality education” for all is failing to be met. The target to make schools “child, disability and gender sensitive and provide safe, non-violent, inclusive and effective learning environments for all” is also not being met. 
+		</p>
+		<p>
+			For teachers and staff, surveillance software is seen as a means to help protect the student body. If a student is making searches that may indicate they plan to harm a themself or other students, it can be flagged and addressed. In extreme scenarios, this is helpful and could prevent unnecessary violence and tragedy from occurring. On the flip side, students' perception of safety may not exactly align with the school official’s. Oftentimes, when students know they are being heavily monitored, it can make students feel as if they are less safe. In a 2018 study on the effects of surveillance cameras on student perception it was concluded that, “Greater use of security cameras inside the school was related to lower perceptions of safety, equity, and support.” (Lindstrom Johnson et al., 2018). Again, this connects directly back to the goal of having equitable education and our target of having safe learning environments.
+		</p>
+
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
